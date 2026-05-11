@@ -2,28 +2,134 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>DocuMind AI</title>
 
     <link rel="stylesheet" href="/static/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
+    <div class="background-glow"></div>
 
-    <div class="container">
+    <section class="hero-section">
 
-        <h1>DocuMind AI</h1>
+        <div class="hero-content">
 
-        <p class="subtitle">
-            AI-Powered Smart Document Analyzer
-        </p>
+            <h1>
+                AI-Powered Document Intelligence
+            </h1>
+
+            <p>
+                Automate resume parsing, invoice extraction,
+                offer letter analysis, and meeting-to-MOM generation
+                using OCR + NLP + FastAPI workflows.
+            </p>
+
+            <a href="#upload-area" class="hero-btn">
+                Start Analyzing
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="features-section">
+        <div class="feature-card">
+
+            <h3>Resume Parsing</h3>
+
+            <p>
+                Extract skills, projects, experience,
+                and candidate details automatically.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <h3>Invoice Extraction</h3>
+
+            <p>
+                Parse invoice numbers, vendor details,
+                due dates, and payment information.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <h3>Offer Letter Analysis</h3>
+            <p>
+                Identify compensation, penalties,
+                bond details, and required documents.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <h3>Meeting Notes → MOM</h3>
+
+            <p>
+                Convert raw meeting discussions into
+                structured MOM dashboards automatically.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="workflow-section">
+
+        <h2>
+            How DocuMind AI Works
+        </h2>
+
+        <div class="workflow-grid">
+
+            <div class="workflow-step">
+                Upload Document
+            </div>
+
+            <div class="workflow-step">
+                OCR + Text Extraction
+            </div>
+
+            <div class="workflow-step">
+                NLP Processing
+            </div>
+
+            <div class="workflow-step">
+                Structured Dashboard Output
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="container" id="upload-area">
 
         <div class="upload-card">
 
+            <h2 class="upload-heading">
+                Analyze Your Document
+            </h2>
+
             <form id="uploadForm" enctype="multipart/form-data">
 
-                <div class="file-upload-container">
+                <div class="file-upload-box">
 
                     <label for="file-upload" class="custom-file-upload">
                         Choose Document
@@ -39,9 +145,12 @@
 
                 <div class="text-input-section">
 
-                    <h3>Or Paste Raw Notes / Text</h3>
+                    <h2>
+                        Or Paste Raw Text / Notes
+                    </h2>
 
-                    <textarea id="meetingText" name="meeting_text" placeholder="Paste any raw text here..."></textarea>
+                    <textarea id="meetingText" name="meeting_text"
+                        placeholder="Paste meeting notes, contracts, invoices, legal text or any raw content here..."></textarea>
 
                 </div>
 
@@ -51,7 +160,7 @@
 
             </form>
 
-            <div id="loading">
+            <div id="loading" class="loading">
                 Analyzing your document...
             </div>
 
