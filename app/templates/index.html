@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocuMind AI</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>DocuMind AI</h1>
+
+        <p class="subtitle">
+            AI-Powered Smart Document Analyzer
+        </p>
+
+        <div class="upload-card">
+
+            <form id="uploadForm" enctype="multipart/form-data">
+
+                <div class="file-upload-container">
+
+                    <label for="file-upload" class="custom-file-upload">
+                        Choose Document
+                    </label>
+
+                    <input type="file" id="file-upload" name="file">
+
+                    <span id="file-name">
+                        No file selected
+                    </span>
+
+                </div>
+
+                <div class="text-input-section">
+
+                    <h3>Or Paste Raw Notes / Text</h3>
+
+                    <textarea id="meetingText" name="meeting_text" placeholder="Paste any raw text here..."></textarea>
+
+                </div>
+
+                <button type="submit">
+                    Analyze Document
+                </button>
+
+            </form>
+
+            <div id="loading">
+                Analyzing your document...
+            </div>
+
+        </div>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>

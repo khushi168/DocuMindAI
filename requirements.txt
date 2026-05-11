@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+jinja2
+python-multipart
+sqlalchemy
+pydantic
+scikit-learn
+joblib
+nltk
+sumy
+spacy
+pymupdf
+pillow
+pytesseract
+aiofiles
