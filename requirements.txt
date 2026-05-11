@@ -13,3 +13,4 @@ pymupdf
 pillow
 pytesseract
 aiofiles
+reportlab
